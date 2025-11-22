@@ -6,4 +6,3 @@ build/
 .pytest_cache/
 .venv/
 env/
-demo/config.yaml

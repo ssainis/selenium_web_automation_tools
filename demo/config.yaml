@@ -1,0 +1,9 @@
+steps:
+  - type: scrape
+    url: https://www.example.com
+    description: "Get the main title of the page"
+  - type: input
+    url: https://www.saucedemo.com/
+    input_data:
+      user-name: "standard_user"
+      password: "secret_sauce"

@@ -2,6 +2,8 @@
 
 A Python package for creating Selenium-based web automation workflows using [PocketFlow](https://pypi.org/project/pocketflow/).
 
+> **Created by Antigravity**
+
 ## Installation
 
 ```bash

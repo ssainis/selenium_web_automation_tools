@@ -37,6 +37,32 @@ flow.add_node(scraper)
 flow.run(shared={})
 ```
 
+### CustomInputter Example
+
+```python
+from pocketflow import Flow
+from selenium_web_automation_tools.custom_inputter import CustomInputter
+
+# Create a flow
+flow = Flow("Login Automation")
+
+# Create an inputter node
+inputter = CustomInputter(
+    name="LoginForm",
+    url="https://example.com/login",
+    input_data={
+        "username": "myuser",
+        "password": "mypassword"
+    }
+)
+
+# Set as start node
+flow = Flow(start=inputter)
+
+# Run
+flow.run(shared={})
+```
+
 ## Demo
 
 See the `demo/` directory for a complete example using a YAML configuration.
